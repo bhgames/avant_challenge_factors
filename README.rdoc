@@ -3,3 +3,8 @@ Given an array of integers, output each integer in the array and all the other i
 
 =Running test
 Navigate in terminal to 'spec' folder and run 'bundle' then 'rspec factors_spec.rb'
+
+=Questions
+* Caching in Ruby is dependent upon several things. The method lookup, the data thrown at the method, and the code within the method itself. In Ruby <= 1.8, the method lookup will executed every time the method is called, resulting in a significant detriment to performance. Method resolution in Ruby >= 1.9 (YARV), with it's inline method cache, circumvents this shortfall with creating a "shortcut" in the cache after the method is called once, and then taking that shortcut if the method is called again
+* If we wanted to store the result in a cache for future lookup, this can be done easily with rails caching, rack-cache, memcached, etc. We could store the result any format we wanted, ie an array containing the result hash or a hash containing the input array as the key and the result as the value. The latter would probably the easiest and more performant way to store the result.
+* If we wanted to reverse the functionality without recalling the first calculation or another, we could define a function that performs the reversal on the result stored in the cache.
