@@ -5,5 +5,5 @@ def factors(numbers)
     	result[int] = results 
 	}
 end
-numbers = [10, 5, 2, 20]
+numbers = [20, 4, 5, 15, 30, 12]
 p factors(numbers)

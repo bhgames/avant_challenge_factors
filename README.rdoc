@@ -1,5 +1,5 @@
 =Factors and Caching
-Given an array of integers, output each integer in the array and all the other integers in the array that are factors of the first integer.
+Given an array of integers, output each integer in the array and all the other integers in the array that are factors of the first integer. In the root folder run 'ruby factors.rb'
 
 =Running test
 Navigate in terminal to 'spec' folder and run 'bundle' then 'rspec factors_spec.rb'
